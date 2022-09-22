@@ -4,7 +4,7 @@ Theme URI:          https: //github.com/WPSwitzerland/wordcampswitzerland-2023
 Author:             Say Hello GmbH
 Author URI:         https://sayhello.ch
 Description:        A WordPress Theme by Say Hello
-Version:            0.0.1
+Version:            0.0.2
 License:            GNU General Public License v3 or later
 License URI:        https://www.gnu.org/licenses/gpl.html
 Text Domain:        sht
@@ -12,7 +12,19 @@ Domain Path:        /languages
 Requires PHP:       8.0
 Requires at least:  6.0
 Template:           twentytwentytwo
+
+Integration URL:    https://raw.githubusercontent.com/WPSwitzerland/wordcampswitzerland-2023/main/style.css
 */
+
+body {
+    --constraint-normal: 650px;
+    --constraint-wide: 1278px;
+    --post-content-offset: calc((var(--constraint-wide) - var(--constraint-normal)) * -0.5);
+}
+
+.alignwide {
+    max-width: var(--constraint-wide);
+}
 
 .c-header {
     position: fixed;
@@ -22,19 +34,16 @@ Template:           twentytwentytwo
     z-index: 20;
 }
 
-:root {
-    --constraint-normal: 650px;
-    --constraint-wide: 1278px;
-
-    --post-content-offset: calc((var(--constraint-wide) - var(--constraint-normal)) * -0.5);
-}
-
 .wp-block-cover .wp-block-post-title {
     line-height:1;
 }
 
 .wp-block-cover__inner-container {
     width:100% !important;
+    max-width: var(--constraint-wide);
+}
+
+.wp-block-post-content > .alignwide {
     max-width: var(--constraint-wide);
 }
 
