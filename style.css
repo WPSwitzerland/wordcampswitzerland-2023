@@ -15,8 +15,13 @@ Template:           twentytwentytwo
 Integration URL:    https://raw.githubusercontent.com/WPSwitzerland/wordcampswitzerland-2023/main/style.css
 */
 
+.wp-site-blocks * {
+    font-family: Archia, Georgia, serif !important;
+    letter-spacing: -.02em;
+}
+
 .alignwide {
-    max-width: 1278px;
+    max-width: 1278px !important;
 }
 
 .c-header {
@@ -27,23 +32,43 @@ Integration URL:    https://raw.githubusercontent.com/WPSwitzerland/wordcampswit
     z-index: 20;
 }
 
+body.admin-bar .c-header {
+    top: var(--wp-admin--admin-bar--height);
+}
+
 .wp-block-cover .wp-block-post-title {
     line-height:1;
+    text-shadow: 0 0 .15em rgba(0, 0, 0, .35);
 }
 
 .wp-block-cover__inner-container {
     width:100% !important;
-    max-width: 1278px;
+    padding-left: var(--wp--custom--spacing--outer);
+    padding-right: var(--wp--custom--spacing--outer);
 }
 
 .wp-block-post-content > .alignwide {
     max-width: 1278px;
 }
 
-@media screen and (min-width: 1278px){
-    .wp-block-post-content > *:not(.alignwide):not(.alignfull) {
+@media screen and (min-width: 720px) {
+    .wp-block-post-content>*:not(.alignwide):not(.alignfull) {
+        transform: translateX(calc((90vw - 650px) * -0.5));
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    .wp-block-post-content>*:not(.alignwide):not(.alignfull) {
         transform: translateX(calc((1278px - 650px) * -0.5));
     }
+
+    .wp-block-cover__inner-container {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1278px;
+    }
+}
+
 /** WOFF2 fonts **/
 
 @font-face {
