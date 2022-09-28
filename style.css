@@ -28,11 +28,6 @@ Integration URL:    https://raw.githubusercontent.com/WPSwitzerland/wordcampswit
     max-width: 1278px !important;
 }
 
-body .wp-site-blocks .alignfull {
-    margin-left: calc(-0.5 * var(--wp--custom--spacing--outer)) !important;
-    margin-right: calc(-0.5 * var(--wp--custom--spacing--outer)) !important;
-}
-
 .c-header {
     position: absolute;
     top: 0;
