@@ -20,6 +20,10 @@ Integration URL:    https://raw.githubusercontent.com/WPSwitzerland/wordcampswit
     letter-spacing: -.02em;
 }
 
+.wp-site-blocks h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
 .alignwide {
     max-width: 1278px !important;
 }
