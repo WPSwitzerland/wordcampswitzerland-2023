@@ -57,6 +57,7 @@ body.admin-bar .c-mainmenu {
 
 .c-mainmenu.has-background-color {
     background-color: transparent !important;
+    padding: 0 !important;
 }
 
 .c-header {
