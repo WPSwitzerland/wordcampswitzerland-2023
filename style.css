@@ -36,6 +36,11 @@ Integration URL:    https://raw.githubusercontent.com/WPSwitzerland/wordcampswit
     left: 0;
     right: 0;
     z-index: 1972;
+    pointer-events: none;
+}
+
+.c-mainmenu a {
+    pointer-events: all;
 }
 
 body.admin-bar .c-mainmenu {
