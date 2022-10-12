@@ -76,6 +76,10 @@ body.admin-bar .c-header {
     top: var(--wp-admin--admin-bar--height);
 }
 
+.c-header .wp-block-site-title {
+    font-style: normal;
+}
+
 .c-header .wp-block-site-title a,
 .c-header .wp-block-site-title a:hover,
 .c-header .wp-block-site-title a:focus-visible {
