@@ -106,7 +106,7 @@ body.admin-bar .c-header {
 }
 
 h1.has-x-large-font-size, .wp-block-post-title.has-x-large-font-size {
-    font-size: clamp(1.75rem, 3vw, 5rem) !important;
+    font-size: clamp(1.75rem, 3vw, 3.5rem) !important;
 }
 
 .wp-block-cover__inner-container {
