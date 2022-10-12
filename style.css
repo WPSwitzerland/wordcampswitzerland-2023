@@ -67,6 +67,10 @@ body.admin-bar .c-mainmenu {
     margin-top: 0;
 }
 
+.c-header .wp-block-navigation__responsive-container {
+    background-color: transparent !important;
+}
+
 body.admin-bar .c-header {
     top: var(--wp-admin--admin-bar--height);
 }
