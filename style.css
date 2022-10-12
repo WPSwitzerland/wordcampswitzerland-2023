@@ -91,8 +91,8 @@ body.admin-bar .c-header {
     padding-right: var(--wp--custom--spacing--outer);
 }
 
-.wp-block-post-content > .wp-block-cover:first-child {
-    margin-bottom: 4vw;
+.wp-block-post-content > .wp-block-cover:first-child, .c-mainmenu + .wp-block-cover {
+    margin-bottom: 3vw;
 }
 
 .wp-block-post-content > .alignwide {
