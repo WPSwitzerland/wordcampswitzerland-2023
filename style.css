@@ -4,7 +4,7 @@ Theme URI:          https: //github.com/WPSwitzerland/wordcampswitzerland-2023
 Author:             Say Hello GmbH
 Author URI:         https://sayhello.ch
 Description:        A WordPress Theme by Say Hello
-Version:            0.1.9
+Version:            0.1.10
 License:            GNU General Public License v3 or later
 License URI:        https://www.gnu.org/licenses/gpl.html
 Text Domain:        sht
@@ -40,6 +40,10 @@ Integration URL:    https://raw.githubusercontent.com/WPSwitzerland/wordcampswit
 
 body.admin-bar .c-mainmenu {
     top: calc(26px + var(--wp-admin--admin-bar--height));
+}
+
+.c-mainmenu .wp-block-navigation__responsive-close {
+    max-width: 100%;
 }
 
 .c-header {
