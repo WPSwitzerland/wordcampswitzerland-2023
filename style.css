@@ -4,7 +4,7 @@ Theme URI:          https: //github.com/WPSwitzerland/wordcampswitzerland-2023
 Author:             Say Hello GmbH
 Author URI:         https://sayhello.ch
 Description:        A WordPress Theme by Say Hello
-Version:            1.2.0
+Version:            1.2.1
 License:            GNU General Public License v3 or later
 License URI:        https://www.gnu.org/licenses/gpl.html
 Text Domain:        sht
@@ -141,10 +141,11 @@ h1.has-x-large-font-size, .wp-block-post-title.has-x-large-font-size {
         overflow: hidden;
     }
 
-    .wp-block-query .wp-block-post-featured-image image {
+        .wp-block-query .wp-block-post-featured-image img, .wp-block-query .wp-block-post-featured-image a {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        vertical-align: middle;
     }
 }
 
