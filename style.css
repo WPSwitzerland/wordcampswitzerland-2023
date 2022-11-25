@@ -4,7 +4,7 @@ Theme URI:          https: //github.com/WPSwitzerland/wordcampswitzerland-2023
 Author:             Say Hello GmbH
 Author URI:         https://sayhello.ch
 Description:        A WordPress Theme by Say Hello
-Version:            1.2.2
+Version:            1.2.3
 License:            GNU General Public License v3 or later
 License URI:        https://www.gnu.org/licenses/gpl.html
 Text Domain:        sht
@@ -19,7 +19,12 @@ Integration URL:    https://raw.githubusercontent.com/WPSwitzerland/wordcampswit
     font-family: Archivo, sans-serif !important;
 }
 
-.wp-site-blocks h1, .wp-site-blocks h2, .wp-site-blocks h3, .wp-site-blocks h4, .wp-site-blocks h5, .wp-site-blocks h6 {
+.wp-site-blocks h1,
+.wp-site-blocks h2,
+.wp-site-blocks h3,
+.wp-site-blocks h4,
+.wp-site-blocks h5,
+.wp-site-blocks h6 {
     font-weight: 800;
 }
 
@@ -47,7 +52,8 @@ Integration URL:    https://raw.githubusercontent.com/WPSwitzerland/wordcampswit
     pointer-events: none;
 }
 
-.c-mainmenu a, .c-mainmenu button {
+.c-mainmenu a,
+.c-mainmenu button {
     pointer-events: all;
 }
 
@@ -76,7 +82,8 @@ body.admin-bar .c-mainmenu {
     z-index: 20;
 }
 
-.c-header:first-child + .wp-block-cover, .c-mainmenu + .wp-block-cover {
+.c-header:first-child+.wp-block-cover,
+.c-mainmenu+.wp-block-cover {
     margin-top: 0;
 }
 
@@ -113,25 +120,27 @@ body.admin-bar .c-header {
 .wp-block-cover h4,
 .wp-block-cover h5,
 .wp-block-cover h6 {
-    line-height:1;
+    line-height: 1;
     text-shadow: 0 0 .15em rgba(0, 0, 0, .35);
 }
 
-h1.has-x-large-font-size, .wp-block-post-title.has-x-large-font-size {
+h1.has-x-large-font-size,
+.wp-block-post-title.has-x-large-font-size {
     font-size: clamp(1.75rem, 3vw, 3.5rem) !important;
 }
 
 .wp-block-cover__inner-container {
-    width:100% !important;
+    width: 100% !important;
     padding-left: var(--wp--custom--spacing--outer);
     padding-right: var(--wp--custom--spacing--outer);
 }
 
-.wp-block-post-content > .wp-block-cover:first-child, .c-mainmenu + .wp-block-cover {
+.wp-block-post-content>.wp-block-cover:first-child,
+.c-mainmenu+.wp-block-cover {
     margin-bottom: 3vw;
 }
 
-.wp-block-post-content > .alignwide {
+.wp-block-post-content>.alignwide {
     max-width: 1278px;
 }
 
@@ -139,13 +148,14 @@ h1.has-x-large-font-size, .wp-block-post-title.has-x-large-font-size {
     border-color: var(--wp--preset--color--custom-primary-light);
 }
 
-@supports(aspect-ratio: 16/9){
+@supports(aspect-ratio: 16/9) {
     .wp-block-query .wp-block-post-featured-image {
         aspect-ratio: 16/9;
         overflow: hidden;
     }
 
-        .wp-block-query .wp-block-post-featured-image img, .wp-block-query .wp-block-post-featured-image a {
+    .wp-block-query .wp-block-post-featured-image img,
+    .wp-block-query .wp-block-post-featured-image a {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -157,6 +167,9 @@ h1.has-x-large-font-size, .wp-block-post-title.has-x-large-font-size {
     .wp-block-post-content>*:not(.alignwide):not(.alignfull) {
         transform: translateX(calc((90vw - 650px) * -0.5));
     }
+    body.single-post .wp-block-post-content>*:not(.alignwide):not(.alignfull) {
+        transform: none;
+    }
 }
 
 @media screen and (min-width: 1420px) {
@@ -164,6 +177,10 @@ h1.has-x-large-font-size, .wp-block-post-title.has-x-large-font-size {
         transform: translateX(calc((1278px - 650px) * -0.5));
     }
 
+    body.single-post .wp-block-post-content>*:not(.alignwide):not(.alignfull) {
+        transform: none;
+    }
+    
     .wp-block-cover__inner-container {
         padding-left: 0;
         padding-right: 0;
@@ -171,7 +188,8 @@ h1.has-x-large-font-size, .wp-block-post-title.has-x-large-font-size {
     }
 }
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 599px) {
+
     .wp-block-navigation__responsive-container-content,
     .wp-block-navigation__responsive-container-content .wp-block-navigation__container,
     .wp-block-navigation__responsive-container-content .wp-block-navigation-item {
