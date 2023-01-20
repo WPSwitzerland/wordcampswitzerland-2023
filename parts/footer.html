@@ -1,14 +1,19 @@
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"3vw","bottom":"3vw"}}},"layout":{"inherit":true}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"3vw","bottom":"3vw"}}},"layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:3vw;padding-bottom:3vw"><!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"2vw","bottom":"1px"}}},"layout":{"inherit":false}} -->
-<div class="wp-block-group alignfull" style="margin-top:2vw;margin-bottom:1px"><!-- wp:group {"layout":{"inherit":true}} -->
+<div class="wp-block-group alignfull" style="margin-top:2vw;margin-bottom:1px"><!-- wp:group {"layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:separator {"align":"wide","className":"is-style-wide"} -->
 <hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" />
 <!-- /wp:separator -->
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
-<p><strong>WordCamp Switzerland</strong><br>Proudly powered by <a href="https://wordpress.org/">WordPress</a><br>and volunteers from the <a href="https://www.wpswitzerland.ch/">Swiss WordPress community</a></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"fontSize":"small"} -->
+<h2 class="wp-block-heading has-small-font-size">WordCamp Switzerland</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Proudly powered by <a rel="noreferrer noopener" href="https://wordpress.org/" target="_blank">WordPress</a> and by volunteers<br>from the Swiss WordPress community.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -52,9 +57,21 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
-<p><a href="#">Resources</a> <a href="#">Impressum</a> <a href="#">Privacy policy</a></p>
+<div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"fontSize":"small"} -->
+<h2 class="wp-block-heading has-small-font-size">News via email</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Would you like to receive an emails  when we publish a news entry? Sign up here.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:jetpack/subscriptions {"buttonBackgroundColor":"primary","borderColor":"primary","successMessage":"Erfolg! Es wurde gerade eine E-Mail gesendet, um dein Abonnement zu bestätigen. Bitte finde die E-Mail jetzt und klicken auf „Folgen bestätigen“, um mit dem Abonnieren zu beginnen."} /-->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">We promise that we won't send you any span and that we won't pass your data onto any third-parties. You can unsubscribe at any time.</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group --></div>
