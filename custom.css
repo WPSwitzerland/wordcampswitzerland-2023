@@ -1,0 +1,282 @@
+/*!
+Theme Name:         WordCamp Switzerland 2023
+Theme URI:          https: //github.com/WPSwitzerland/wordcampswitzerland-2023
+Author:             Say Hello GmbH
+Author URI:         https://sayhello.ch
+Description:        A WordPress Theme by Say Hello
+Version:            1.3.5
+License:            GNU General Public License v3 or later
+License URI:        https://www.gnu.org/licenses/gpl.html
+Text Domain:        sht
+Domain Path:        /languages
+Requires PHP:       8.0
+Requires at least:  6.0
+Template:           twentytwentytwo
+Integration URL:    https://raw.githubusercontent.com/WPSwitzerland/wordcampswitzerland-2023/main/style.css
+*/
+
+.wp-site-blocks * {
+    font-family: Archivo, sans-serif !important;
+}
+
+.wp-site-blocks h1,
+.wp-site-blocks h2,
+.wp-site-blocks h3,
+.wp-site-blocks h4,
+.wp-site-blocks h5,
+.wp-site-blocks h6 {
+    font-weight: 800;
+}
+
+.wp-site-blocks h1 a,
+.wp-site-blocks h2 a,
+.wp-site-blocks h3 a,
+.wp-site-blocks h4 a,
+.wp-site-blocks h5 a,
+.wp-site-blocks h6 a {
+    font-weight: inherit !important;
+    text-decoration: none;
+}
+
+.wp-site-blocks th,
+.wp-site-blocks td {
+    text-align: left;
+}
+
+.wp-site-blocks th,
+.wp-site-blocks td {
+    text-align: left;
+    padding: 0.5vw;
+}
+
+.wp-site-blocks th:first-child,
+.wp-site-blocks td:first-child {
+    padding-left: 0;
+}
+
+.wp-site-blocks button,
+.wp-site-blocks input[type="submit"],
+.wp-site-blocks input[type="reset"] {
+    border: none;
+    padding: 15px 23px 15px 23px;
+    color: var(--wp--preset--color--white);
+    background-color: var(--wp--preset--color--primary);
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.wp-site-blocks select {
+    padding: 15px;
+}
+
+.alignwide {
+    max-width: 1278px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c-mainmenu {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    right: 0;
+    z-index: 1972;
+    pointer-events: none;
+}
+
+.c-mainmenu a,
+.c-mainmenu button {
+    pointer-events: all;
+}
+
+.c-mainmenu .current-menu-item>a {
+    text-decoration: underline;
+}
+
+body.admin-bar .c-mainmenu {
+    top: calc(26px + var(--wp-admin--admin-bar--height));
+}
+
+.c-mainmenu .wp-block-navigation__responsive-close {
+    max-width: 100%;
+}
+
+.c-mainmenu.has-background-color {
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+.wp-site-blocks>.c-mainmenu.c-mainmenu {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-width: 1280px !important;
+    margin-top: -.5rem !important;
+    padding-right: 2.5rem !important;
+}
+
+@media screen and (min-width: 48rem) {
+    .wp-site-blocks>.c-mainmenu.c-mainmenu {
+        margin-top: 0 !important;
+        padding-right: 2.5rem !important;
+    }
+}
+
+.c-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.c-header:first-child+.wp-block-cover,
+.c-mainmenu+.wp-block-cover {
+    margin-top: 0;
+}
+
+body.admin-bar .c-header {
+    top: var(--wp-admin--admin-bar--height);
+}
+
+.c-header .wp-block-site-title {
+    font-style: normal;
+}
+
+.c-header .wp-block-site-title a,
+.c-header .wp-block-site-title a:hover,
+.c-header .wp-block-site-title a:focus-visible {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1279px) {
+    .c-header .wp-block-site-title {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1540px) {
+    .c-header .wp-block-site-logo {
+        margin-left: -104px;
+    }
+}
+
+.wp-block-cover .wp-block-post-title,
+.wp-block-cover h1,
+.wp-block-cover h2,
+.wp-block-cover h3,
+.wp-block-cover h4,
+.wp-block-cover h5,
+.wp-block-cover h6 {
+    line-height: 1;
+    text-shadow: 0 0 .15em rgba(0, 0, 0, .35);
+}
+
+h1.has-x-large-font-size,
+.wp-block-post-title.has-x-large-font-size {
+    font-size: clamp(1.75rem, 3vw, 3.5rem) !important;
+}
+
+.wp-block-cover__inner-container {
+    width: 100% !important;
+    padding-left: var(--wp--custom--spacing--outer);
+    padding-right: var(--wp--custom--spacing--outer);
+}
+
+.wp-block-post-content>.wp-block-cover:first-child,
+.c-mainmenu+.wp-block-cover {
+    margin-bottom: 3vw;
+}
+
+.wp-block-post-content>.alignwide {
+    max-width: 1278px;
+}
+
+.wp-block-separator:not(.has-background) {
+    border-color: var(--wp--preset--color--custom-primary-light);
+}
+
+.wordcamp-post-list.wordcamp-organizers {
+    padding-left: 0;
+    gap: var(--wp--preset--spacing--80) var(--wp--preset--spacing--80);
+}
+
+.wordcamp-post-list.wordcamp-organizers .wordcamp-organizers__title {
+    font-size: 1.5rem;
+}
+
+.wp-block-jetpack-subscriptions .success {
+    background-color: green;
+    color: white;
+    padding: 1em;
+}
+
+.wp-block-jetpack-subscriptions .success>* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wp-block-jetpack-subscriptions .success>*+* {
+    margin-top: 1em;
+}
+
+.wp-block-jetpack-contact-form .wp-block-heading {
+    flex-basis: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tix-tickets-list .tix-column-description {
+    font-weight: bold;
+}
+
+.tix-tickets-list .tix-column-description[scope="row"] {
+    font-weight: normal;
+}
+
+.wp-block-template-part {
+    clear: both;
+}
+
+@supports(aspect-ratio: 16/9) {
+    .wp-block-query .wp-block-post-featured-image {
+        aspect-ratio: 16/9;
+        overflow: hidden;
+    }
+
+    .wp-block-query .wp-block-post-featured-image img,
+    .wp-block-query .wp-block-post-featured-image a {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    body.page .wp-block-post-content>*:not(.alignwide):not(.alignfull) {
+        transform: translateX(calc((90vw - 650px) * -0.5));
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    body.page .wp-block-post-content>*:not(.alignwide):not(.alignfull) {
+        transform: translateX(calc((1278px - 650px) * -0.5));
+    }
+
+    .wp-block-cover__inner-container {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1278px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    .wp-block-navigation__responsive-container-content,
+    .wp-block-navigation__responsive-container-content .wp-block-navigation__container,
+    .wp-block-navigation__responsive-container-content .wp-block-navigation-item {
+        align-items: flex-start !important;
+    }
+}
