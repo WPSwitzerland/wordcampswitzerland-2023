@@ -106,12 +106,29 @@ body.admin-bar .c-mainmenu {
     padding: 0 !important;
 }
 
+.wp-site-blocks>.c-mainmenu.c-mainmenu {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-width: 1280px !important;
+    margin-top: -.5rem !important;
+    padding-right: 2.5rem !important;
+}
+
+@media screen and (min-width: 48rem) {
+    .wp-site-blocks>.c-mainmenu.c-mainmenu {
+        margin-top: 0 !important;
+        padding-right: 2.5rem !important;
+    }
+}
+
 .c-header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 20;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .c-header:first-child+.wp-block-cover,
@@ -204,12 +221,22 @@ h1.has-x-large-font-size,
     margin-top: 1em;
 }
 
+.wp-block-jetpack-contact-form .wp-block-heading {
+    flex-basis: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .tix-tickets-list .tix-column-description {
     font-weight: bold;
 }
 
 .tix-tickets-list .tix-column-description[scope="row"] {
     font-weight: normal;
+}
+
+.wp-block-template-part {
+    clear: both;
 }
 
 @supports(aspect-ratio: 16/9) {
