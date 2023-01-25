@@ -239,6 +239,63 @@ h1.has-x-large-font-size,
     clear: both;
 }
 
+.wordcamp-post-list.wordcamp-sponsors {
+    padding-left: 0;
+}
+
+.wordcamp-post-list.wordcamp-sponsors .wordcamp-sponsor.wordcamp-sponsors__post {
+    display: grid;
+    gap: 0;
+    align-items: center
+}
+
+.wordcamp-post-list.wordcamp-sponsors .wordcamp-sponsor.wordcamp-sponsors__post img.wordcamp-image__featured-image {
+    height: auto;
+}
+
+@media screen and (min-width: 48em) {
+    .wordcamp-post-list.wordcamp-sponsors .wordcamp-sponsor.wordcamp-sponsors__post {
+        gap: 3rem;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .wordcamp-post-list.wordcamp-sponsors {
+        gap: 8vw;
+    }
+}
+
+
+/* HEADINGS */
+
+.wp-block-heading--gold {
+    border-bottom: 1px solid currentColor;
+    color: goldenrod;
+}
+
+.wp-block-heading--silver {
+    border-bottom: 1px solid currentColor;
+    color: darkgrey;
+}
+
+.wp-block-heading--bronze {
+    border-bottom: 1px solid currentColor;
+    color: #CD7F32;
+}
+
+.wp-block-heading--inkind {
+    border-bottom: 1px solid currentColor;
+    color: hotpink;
+}
+
+.wp-block-heading--mediapartner {
+    border-bottom: 1px solid currentColor;
+    color: cornflowerblue;
+}
+
+/**/
+
 @supports(aspect-ratio: 16/9) {
     .wp-block-query .wp-block-post-featured-image {
         aspect-ratio: 16/9;
