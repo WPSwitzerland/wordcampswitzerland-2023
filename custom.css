@@ -267,11 +267,20 @@ h1.has-x-large-font-size,
 }
 
 @media screen and (min-width: 48em) {
-    .wordcamp-post-list.wordcamp-sponsors {
+    .wordcamp-post-list.wordcamp-sponsors.has-grid-columns-2 {
         gap: 8vw;
+    }
+
+    .wordcamp-post-list.wordcamp-sponsors.has-grid-columns-3 {
+        gap: 6vw;
+    }
+
+    .wordcamp-post-list.wordcamp-sponsors.has-grid-columns-4 {
+        gap: 4vw;
     }
 }
 
+/**/
 
 /* HEADINGS */
 
