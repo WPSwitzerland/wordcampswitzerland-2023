@@ -239,6 +239,12 @@ h1.has-x-large-font-size,
     clear: both;
 }
 
+/* SPONSORS */
+
+.wordcamp-block__item-content {
+    font-size: var(--wp--preset--font-size--small);
+}
+
 .wordcamp-post-list.wordcamp-sponsors {
     padding-left: 0;
 }
