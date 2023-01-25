@@ -245,6 +245,10 @@ h1.has-x-large-font-size,
     font-size: var(--wp--preset--font-size--small);
 }
 
+.single-wcb_sponsor .wp-block-post-featured-image {
+    max-width: 250px;
+}
+
 .wordcamp-post-list.wordcamp-sponsors {
     padding-left: 0;
 }
