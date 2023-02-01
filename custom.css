@@ -406,26 +406,85 @@ h1.has-x-large-font-size,
     padding-left: 0;
 }
 
-.tix-attendee-list.tix-columns-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.tix-attendee-list li {
+#tix-attendees li {
+    width: unset !important;
     float: none;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 96px 1fr;
-    gap: 1rem;
-    clear: both;
+    margin-bottom: 0;
+    height: auto;
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 5%);
+    text-align: center;
+    word-break: break-word;
+
+    padding: 1rem;
+    padding: clamp(1rem, 0.7142857142857143rem + 1.4285714285714286vw, 2rem);
 }
 
-.tix-attendee-list li * {
-    grid-column: 2;
+#tix-attendees li>* {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.tix-attendee-list li img {
-    grid-column: 1;
+#tix-attendees li img {
+    float: none;
+    width: clamp(4rem, 3rem + 5vw, 7.5rem) !important;
+    height: clamp(4rem, 3rem + 5vw, 7.5rem) !important;
+    border-radius: 8px;
 }
+
+#tix-attendees .tix-field {
+    margin-left: 0;
+}
+
+#tix-attendees .tix-attendee-url {
+    display: inline-block;
+}
+
+#tix-attendees .avatar {
+    float: none !important;
+}
+
+.tix-attendee-list {
+    gap: 2rem;
+    gap: clamp(1rem, 0.1428571428571428rem + 4.285714285714286vw, 4rem);
+}
+
+.tix-attendee-name {
+    font-size: var(--wp--preset--font-size--medium) !important;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.tix-attendee-name * {
+    font-size: 1em !important;
+}
+
+@media screen and (min-width: 48em) {
+    .tix-attendee-list.tix-columns-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .tix-attendee-list.tix-columns-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .tix-attendee-list {
+        gap: 4rem;
+    }
+}
+
 /* ATTENDEE LIST END */
 
 /* MICROSPONSORS START */
