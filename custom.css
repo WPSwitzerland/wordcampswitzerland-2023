@@ -429,8 +429,18 @@ h1.has-x-large-font-size,
 /* ATTENDEE LIST END */
 
 /* MICROSPONSORS START */
-.wordcamp-sponsors--microsponsors a {
+.wordcamp-sponsors--microsponsors .wordcamp-image__featured-image-container a {
+    display: block;
     pointer-events: none;
+}
+
+.wordcamp-sponsors--microsponsors .wordcamp-block__item-content > * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wordcamp-sponsors--microsponsors .wordcamp-block__item-content > * + * {
+    margin-top: var(--wp--style--block-gap);
 }
 
 .wordcamp-post-list.wordcamp-sponsors--microsponsors .wordcamp-sponsor.wordcamp-sponsors__post {
