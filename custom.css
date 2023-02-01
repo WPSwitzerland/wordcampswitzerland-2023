@@ -313,6 +313,11 @@ h1.has-x-large-font-size,
     color: cornflowerblue;
 }
 
+.wp-block-heading--microsponsors {
+    border-bottom: 1px solid currentColor;
+    color: purple;
+}
+
 /**/
 
 @supports(aspect-ratio: 16/9) {
@@ -394,3 +399,41 @@ h1.has-x-large-font-size,
     }
 /* SCHEDULE END */
 
+/* ATTENDEE LIST START */
+.tix-attendee-list {
+    display: grid;
+    gap: 1rem;
+    padding-left: 0;
+}
+
+.tix-attendee-list.tix-columns-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tix-attendee-list li {
+    float: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 1rem;
+    clear: both;
+}
+
+.tix-attendee-list li * {
+    grid-column: 2;
+}
+
+.tix-attendee-list li img {
+    grid-column: 1;
+}
+/* ATTENDEE LIST END */
+
+/* MICROSPONSORS START */
+.wordcamp-sponsors--microsponsors a {
+    pointer-events: none;
+}
+
+.wordcamp-post-list.wordcamp-sponsors--microsponsors .wordcamp-sponsor.wordcamp-sponsors__post {
+    display: block;
+}
+/* MICROSPONSORS END */
