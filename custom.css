@@ -169,8 +169,7 @@ body.admin-bar .c-header {
 .wp-block-cover h4,
 .wp-block-cover h5,
 .wp-block-cover h6 {
-    line-height: 1;
-    text-shadow: 0 0 .15em rgba(0, 0, 0, .35);
+    text-shadow: 0 0 .1em rgba(0, 0, 0, .75);
 }
 
 h1.has-x-large-font-size,
