@@ -252,6 +252,15 @@ h1.has-x-large-font-size,
     padding-left: 0;
 }
 
+.wordcamp-post-list.wordcamp-sponsors.has-layout-list > * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wordcamp-post-list.wordcamp-sponsors.has-layout-list > * + * {
+    margin-top: var(--wp--custom--spacing--medium);
+}
+
 .wordcamp-post-list.wordcamp-sponsors .wordcamp-sponsor.wordcamp-sponsors__post {
     display: grid;
     gap: 0;
